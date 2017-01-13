@@ -1,10 +1,5 @@
-const React = require('react');
-const ReactDOM = require('react-dom');
+var React = require('react');
+var ReactDOM = require('react-dom');
+var routes = require('./config/routes');
 
-function HelloWorld() {
-  return (
-    <p>Hello world!</p>
-  );
-}
-
-ReactDOM.render(<HelloWorld />, document.getElementById('app'));
+ReactDOM.render(routes, document.getElementById('app'));
