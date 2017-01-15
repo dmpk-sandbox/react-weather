@@ -1,15 +1,19 @@
 const React = require('react');
 const ReactRouter = require('react-router');
-const Main = require('../components/Main');
+const Main = require('../containers/Main');
+const Home = require('../components/Home');
 
 const Router = ReactRouter.Router;
 const Route = ReactRouter.Route;
+const IndexRoute = ReactRouter.IndexRoute;
 
 const hashHistory = ReactRouter.hashHistory;
 
 const routes = (
   <Router history={hashHistory}>
-    <Route path='/' component={Main} />
+    <Route path='/' component={Main}>
+      <IndexRoute component={Home} />
+    </Route>
   </Router>
 )
 
