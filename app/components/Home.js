@@ -1,4 +1,5 @@
 const React = require('react');
+const GetCityContainer = require('../containers/GetCityContainer');
 
 const styles = {
   container: {
@@ -22,18 +23,7 @@ function Home() {
   return (
     <div style={styles.container}>
       <h1 style={styles.header}>Enter a City and State</h1>
-      <div className="text-center">
-        <form>
-          <div className="form-group">
-            <input className="form-control" placeholder="St. George, Utah" type="text"/>
-          </div>
-          <div className="form-group">
-            <button type="button" className="btn btn-lg btn-success">
-              Get Weather
-            </button>
-          </div>
-        </form>
-      </div>
+      <GetCityContainer />
     </div>
   )
 }
